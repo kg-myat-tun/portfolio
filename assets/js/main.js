@@ -289,4 +289,14 @@ window.addEventListener('scroll',scrollUp)
     };
 
 
+    // loader
+    // let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
+    window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        // spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+
+        var load_screen = document.getElementById("spinner-wrapper");
+        document.body.removeChild(load_screen);
+        document.getElementById('main-content').classList.add('ready');
+    });
