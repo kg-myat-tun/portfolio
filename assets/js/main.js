@@ -204,6 +204,12 @@ function scrollUp() {
 
 window.addEventListener('scroll',scrollUp)
 
+/*==================== CONTACT FORM SUBMIT ====================*/
+
+function contactFormSubmit (){
+    document.getElementById("contactForm").submit();
+}
+
 /*==================== DARK LIGHT THEME ====================*/
 
     const themeButton = document.getElementById('theme-button')
